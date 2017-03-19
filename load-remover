@@ -1,0 +1,7 @@
+state("Overgrowth") {
+	int loading : "SDL2.dll", 0xF55A8;
+}
+
+isLoading {
+	return current.loading != 0;
+}
